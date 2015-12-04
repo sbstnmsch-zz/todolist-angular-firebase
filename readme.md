@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sbstnmsch/todolist-angular-firebase.svg?branch=master)](https://travis-ci.org/sbstnmsch/todolist-angular-firebase)
+
 # A simple chat todo app (todolist)
 
 > Ever wanted to have a todo list as tasks but still others being able to assign themselves to them? With todolist you can. Simple pretend to be chatting among team members while every message is a todo which can be completed by anyone.
