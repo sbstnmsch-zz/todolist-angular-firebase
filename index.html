@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="todolist">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="initial-scale=1,width=device-width,maximum-scale=1,user-scalable=no">
+    <title>todolist</title>
+  </head>
+
+  <body>
+    <div class="todolist">
+      <todolist-header></todolist-header>
+      <todolist-inputbar></todolist-inputbar>
+      <todolist-todos></todolist-todos>
+      <todolist-action></todolist-action>
+    </div>
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js" defer></script>
+    <script type="application/javascript" src="./dist/javascript/libs.min.js" defer></script>
+    <script type="application/javascript" src="/todolist.bundle.js" defer></script>
+    <script type="application/javascript" src="/webpack-dev-server.js"></script>
+  </body>
+</html>

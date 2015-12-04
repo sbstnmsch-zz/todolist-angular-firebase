@@ -1,0 +1,23 @@
+{
+  "credentials": {
+    "username": "tobiasdeekens4",
+    "accessKey": "9yfpaMxynVfvWGRUxNxe"
+  },
+  "localIdentifier": "todolist",
+  "debug": false,
+  "local": true,
+  "projects": {
+    "karma": "todolist:Karma-Unit-Tests",
+    "protractor": "todolist:Protractor"
+  },
+  "proxy": {
+    "host": "proxy.inf.epost-dev.de",
+    "port": 8080
+  },
+  "timeouts": {
+    "disconnectTimeout": 10000,
+    "disconnectTolerance": 1,
+    "noActivityTimeout": 240000,
+    "captureTimeout": 240000
+  }
+}

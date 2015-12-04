@@ -1,0 +1,42 @@
+@import '../config/colors';
+
+.todolist-todos-todo
+  display block
+  box-sizing border-box
+  overflow hidden
+  min-height 80px
+  margin-bottom 1px
+  padding-top 10px
+  padding-left 100px
+  padding-right 10px
+  padding-bottom 10px
+  font-size 2em
+  background todo-background
+  background-repeat no-repeat
+  background-size auto 80px
+  list-style-type none
+  color todolist-blue
+  cursor pointer
+  transition all .4s
+  &__done
+    text-decoration line-through
+    opacity .4
+  &__assigned
+    color todolist-light
+    & .todolist-todos-todo-new
+      display none
+  &-new
+    display block
+    color todolist-yellow
+    font-size .5em
+  &-assignee
+    display block
+    color todolist-green
+    font-size .5em
+  &-title
+    display block
+    font-size .75em
+  &.ng-enter
+    opacity 0
+  &.ng-enter.ng-enter-active
+    opacity 1

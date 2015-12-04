@@ -1,0 +1,25 @@
+@import '../config/colors';
+@import '../mixins/index';
+
+.todolist-inputbar
+  fullscreen()
+  top calc(100% - 100px)
+  bottom 41px
+  &__field
+    display block
+    margin 0 20px;
+    width calc(100% - 40px)
+    border-radius 8px
+    box-sizing border-box
+    outline none
+    appearance none
+    border solid todolist-blue 2px
+    height 40px
+    line-height 40px
+    font-size 1.4em
+    padding 0 20px
+    background none
+    color todolist-white
+
+  &__submit
+    display none

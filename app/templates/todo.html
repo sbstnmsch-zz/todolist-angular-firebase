@@ -1,0 +1,22 @@
+<div
+  class="todolist-todos-todo"
+  ng-class="{
+    'todolist-todos-todo__done': todo.done,
+    'todolist-todos-todo__assigned': todo.assigned
+  }"
+  ng-click="proceed()"
+  todolist-right-click="cutback()"
+  style="background-image: {{ todo.assigned ? 'url(' + todo.assigned.avatar + ')' : 'none'}}">
+
+  <div class="todolist-todos-todo-new">
+    New Todo
+  </div>
+
+  <div class="todolist-todos-todo-assignee">
+    {{ todo.assigned.name }}
+  </div>
+
+  <div class="todolist-todos-todo-title">
+    {{ todo.title }}
+  </div>
+</div>

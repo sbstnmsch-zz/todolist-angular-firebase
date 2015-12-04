@@ -1,0 +1,129 @@
+@import '../config/colors';
+@import '../mixins/index';
+
+login-button(pos, svg)
+  position relative
+  top pos
+  transform translateY(-pos)
+  display block
+  height 64px
+  width 64px
+  border-radius 50%
+  border solid 2px #ccc
+  margin-left auto
+  margin-right auto
+  background-image embedurl(svg);
+  background-size cover
+  cursor pointer
+
+.todolist-action
+  fullscreen()
+  top 40px
+  text-align center
+  background-color action-background
+
+  &-total
+    position absolute
+    opacity 0
+
+  &-clear
+    opacity 0
+    transition opacity .4s 2s
+
+  &--logged-in
+    animation logged-in 1.2s forwards
+
+    & .todolist-action-total
+      width h=46px
+      height 46px
+      left calc(50% - 23px)
+      line-height h
+      content '0'
+      animation logged-in-action 1.2s forwards
+      &:after
+        content '%'
+        font-size .7em
+        opacity .8
+
+    & .todolist-action-clear
+      position absolute
+      top 0
+      right 10px
+      height 40px
+      width 40px
+      background-image embedurl("../../../node_modules/evil-icons/assets/icons/ei-trash.svg");
+      background-size cover
+      cursor pointer
+      opacity .8
+
+  &-button
+    &__facebook
+      login-button(25%, "../../../node_modules/evil-icons/assets/icons/ei-sc-facebook.svg")
+      &:before
+        position relative
+        top -70px
+        left -10px
+        font-weight bold
+        font-size 2em
+        content 'Login'
+
+    &__google
+      login-button(35%, "../../../node_modules/evil-icons/assets/icons/ei-sc-google-plus.svg")
+
+    &__github
+      login-button(45%, "../../../node_modules/evil-icons/assets/icons/ei-sc-github.svg")
+
+
+@keyframes logged-in {
+  50% {
+    transform translateY(0)
+  }
+  100% {
+    transform translateY(calc(100% - 80px))
+  }
+}
+
+@keyframes logged-in-action {
+  0% {
+    margin-top 74px
+    background-color action-background
+  }
+  25% {
+    margin-top -23px
+    background-color todolist-dark
+  }
+  30% {
+    background-color todolist-red
+  }
+  35% {
+    background-color todolist-green
+  }
+  40% {
+    transform rotate(0deg);
+    background-color todolist-blue
+  }
+  45% {
+    background-color todolist-yellow
+  }
+  50% {
+    margin-top -23px
+    background-color todolist-dark
+    border-radius 0
+
+  }
+  75% {
+    transform rotate(360deg)
+  }
+  90% {
+    box-shadow none
+  }
+  100% {
+    transform rotate(0deg);
+    margin-top -23px
+    border-radius 50%
+    background-color todolist-blue
+    color todolist-white
+    opacity 1
+    box-shadow 0 -4px 10px todolist-real-dark
+  }
+}

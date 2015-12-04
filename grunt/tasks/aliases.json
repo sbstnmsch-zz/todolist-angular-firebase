@@ -1,0 +1,73 @@
+{
+  "_js": [
+    "eslint",
+    "ngtemplates",
+    "shell:webpack",
+    "uglify:app"
+  ],
+
+  "_css": [
+    "shell:stylint",
+    "stylus:css",
+    "autoprefixer:css"
+  ],
+
+  "default": [
+    "clean:before",
+    "_css",
+    "uglify:libs",
+    "_js",
+    "clean:after"
+  ],
+  "_lint": [
+    "eslint"
+  ],
+  "serve": [
+    "default",
+    "concurrent:serve"
+  ],
+  "_mocha-test": [
+    "_lint",
+    "mochaTest:test"
+  ],
+  "_local-e2e": [
+    "_static",
+    "webpack-dev-servr:protractor",
+    "protractor:local"
+  ],
+  "test": [
+    "_lint",
+    "_mocha-test"
+  ],
+  "mocha-watch": [
+    "_mocha-test",
+    "watch:mocha"
+  ],
+  "local-test": [
+    "_static",
+    "_mocha-test",
+    "karma:local",
+    "webpack-dev-servr:protractor",
+    "protractor:local"
+  ],
+  "local-mocha": [
+    "_static",
+    "_mocha-test"
+  ],
+  "local-karma": [
+    "karma:local-keep-alive"
+  ],
+  "karma-watch": [
+    "local-test",
+    "watch:karma"
+  ],
+  "local-e2e": [
+    "_local-e2e"
+  ],
+  "_browserstack-e2e": [
+    "webpack-dev-servr:protractor",
+    "browserstacktunnel-wrapper:start",
+    "protractor:browserstack",
+    "browserstacktunnel-wrapper:stop"
+  ]
+}

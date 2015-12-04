@@ -1,0 +1,34 @@
+{
+  "src": {
+    "js": "app/javascript",
+    "css": "app/stylesheets",
+    "templates": "app/templates",
+    "mocks": "app/mocks",
+    "npm": "node_modules"
+  },
+  "tmp": {
+    "all": "tmp",
+    "actionIn": "tmp/in",
+    "actionOut": "tmp/out"
+  },
+  "dist": {
+    "root": "dist",
+    "js": "dist/javascript",
+    "jsbundle": "dist/javascript/todolist.bundle.js",
+    "css": "dist/stylesheets/",
+    "cssbundle": "dist/stylesheets/todolist.min.css",
+    "templates": "dist/templates",
+    "mocks": "dist/mocks"
+  },
+  "lint": [
+    "app/**/*.js",
+    "!grunt/**/*.js",
+    "!test/**/*.js",
+    "!app/javascript/config/environment.js",
+    "!app/javascript/ng-templates.js"
+  ],
+  "test": {
+    "mocha": ["test/unit/**/*.js"],
+    "karma": ["test/directives/**/*.js"]
+  }
+}
