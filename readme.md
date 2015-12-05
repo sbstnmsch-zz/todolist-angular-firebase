@@ -8,7 +8,7 @@
 # Prerequesites
 Use a Unix-flavoured machine and install:
 - git
-- node >0.12.x
+- node 5
 - npm
 
 ## Install and start

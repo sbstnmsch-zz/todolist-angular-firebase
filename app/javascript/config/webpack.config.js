@@ -74,7 +74,15 @@ module.exports = {
       { test: /\.css/, loader: styleLoader },
       { test: /\.svg$/, loader: 'file-loader' },
       { test: /\.json/, loader: 'json-loader' },
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader?optional[]=runtime'}
+      {
+        test: /\.js$/,
+        exclude: [/node_modules/],
+        loader: 'babel',
+        query: {
+          cacheDirectory: true,
+          presets: ['es2015']
+        }
+      }
     ]
   },
   plugins: _plugins
