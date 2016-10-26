@@ -91,7 +91,7 @@
     "mocha-teamcity-reporter": "1.0.0",
     "node-libs-browser": "^0.5.0",
     "optimist": "^0.6.1",
-    "protractor": "^3.0.0",
+    "protractor": "^4.0.10",
     "script-loader": "^0.6.0",
     "sinon": "1.17.2",
     "source-map": "^0.5.3",
