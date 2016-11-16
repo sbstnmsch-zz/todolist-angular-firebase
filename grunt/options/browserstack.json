@@ -11,7 +11,7 @@
     "protractor": "todolist:Protractor"
   },
   "proxy": {
-    "host": "proxy.inf.epost-dev.de",
+    "host": "<your-proxy>",
     "port": 8080
   },
   "timeouts": {

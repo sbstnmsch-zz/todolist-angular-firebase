@@ -3,13 +3,13 @@ var
   proxy = require('../../grunt/options/browserstack.json').proxy;
 
 require('global-tunnel').initialize({
-  host: 'proxy.inf.epost-dev.de',
+  host: '<your-proxy>',
   port: 8080
 });
 
 var
   webDriverConfig = {
-    hostname: 'selenium-hub-1.bis.epost-dev.de',
+    hostname: '<your-selenium-hub>',
     port: 4444
   };
 
