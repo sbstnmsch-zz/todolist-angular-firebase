@@ -85,7 +85,7 @@
     "karma-webdriver-launcher": "^1.0.1",
     "karma-webpack": "^1.7.0",
     "load-grunt-config": "^0.19.1",
-    "lodash": "~3.10.1",
+    "lodash": "~4.17.3",
     "lodash-node": "^3.10.1",
     "mocha": "^2.1.0",
     "mocha-teamcity-reporter": "1.0.0",
