@@ -70,7 +70,7 @@
     "grunt-sync": "^0.5.0",
     "grunt-webpack-dev-servr": "^0.1.4",
     "imports-loader": "^0.6.3",
-    "jit-grunt": "^0.9.1",
+    "jit-grunt": "^0.10.0",
     "jquery": "2.1.4",
     "jsdom": "^7.1.1",
     "jshint": "^2.5.6",
