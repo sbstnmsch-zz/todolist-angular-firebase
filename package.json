@@ -65,7 +65,7 @@
     "grunt-notify": "^0.4.1",
     "grunt-processhtml": "^0.3.3",
     "grunt-protractor-runner": "^3.0.0",
-    "grunt-shell": "^1.1.1",
+    "grunt-shell": "^2.0.0",
     "grunt-svgmin": "^3.1.0",
     "grunt-sync": "^0.5.0",
     "grunt-webpack-dev-servr": "^0.1.4",
