@@ -34,7 +34,7 @@
     "babel-runtime": "^6.3.13",
     "browserstacktunnel-wrapper": "^1.4.0",
     "chai": "^3.4.1",
-    "chai-as-promised": "^5.1.0",
+    "chai-as-promised": "^6.0.0",
     "chai-things": "^0.2.0",
     "cli-color": "^1.1.0",
     "css-loader": "^0.23.0",
