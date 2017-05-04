@@ -2,6 +2,8 @@
 
 # A simple chat todo app (todolist)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sbstnmsch/todolist-angular-firebase.svg)](https://greenkeeper.io/)
+
 > Ever wanted to have a todo list as tasks but still others being able to assign themselves to them? With todolist you can. Simple pretend to be chatting among team members while every message is a todo which can be completed by anyone.
 
 
